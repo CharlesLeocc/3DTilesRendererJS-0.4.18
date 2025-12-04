@@ -52,7 +52,7 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  const reqUrl = new URL(req.url, `http://localhost:${PORT}`);
+  const reqUrl = new URL(req.url, `http://192.168.10.119:${PORT}`);
   console.log('[proxy] incoming request', {
     method: req.method,
     path: reqUrl.pathname,
